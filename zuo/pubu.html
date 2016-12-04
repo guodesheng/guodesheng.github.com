@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        width: 200px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        float: left;
+    }
+    ul li{
+        width: 180px;
+        margin: 5px;
+        list-style: none;
+    }
+</style>
+<script>
+    function rnd(n,m){
+        return parseInt(Math.random()*(m-n)+n);
+    }
+    function createLi(){
+        var oLi=document.createElement('li');
+        oLi.style.height=rnd(100,501)+'px';
+        oLi.style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+        return oLi;
+    }
+    window.onload=function(){
+        var aUl=document.getElementsByTagName('ul');
+        function pul(){
+            //上来先创建20个
+            for(var i=0;i<20;i++){
+                var aLi=createLi();
+                var arr=[];
+                for(var j=0;j<aUl.length;j++){
+                    arr.push(aUl[j]);
+                }
+                arr.sort(function(ul1,ul2){
+                    return ul1.offsetHeight-ul2.offsetHeight;
+                })
+                arr[0].appendChild(aLi);
+            }
+        }
+        pul();
+        window.onscroll=function(){
+            var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+            var cH=document.documentElement.clientHeight;
+            var oH=document.body.scrollHeight;
+            if(scrollTop+cH>=oH-500){
+               pul();
+            }
+        };
+    };
+</script>
+<body>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+<ul></ul>
+</body>
+</html>

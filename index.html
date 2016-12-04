@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="base/base.css">
+    <link rel="stylesheet" href="css_style/style.css">
+    <link rel="stylesheet" href="css_style/animate.css"/>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="zuopinjs/zuopin.js"></script>
+    <script type="text/javascript" src="js/tags.js"></script>
+    <style>
+
+        input{
+            width: 540px;
+            height: 32px;
+            border:1px solid #ccc;
+            margin:0 auto ;
+            display: block;
+        }
+        #ul1{
+            width: 540px;
+            border:1px solid #ccc;
+            margin:0 auto;
+            border-top: none;
+            display: none;
+        }
+        #ul1 li{
+            height: 30px;
+            line-height: 30px;
+            padding-left: 5px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .on{
+            background: orange;
+            color:#fff;
+        }
+    </style>
+    <script src="js/jsonp.js"></script>
+</head>
+<body>
+<div class="box" id="box">
+    <ul class="nav clearfix">
+        <li class="animated bounceInRight">首页</li>
+        <li class="animated bounceIn">作品展示</li>
+        <li class="animated bounceInLeft">小游戏</li>
+        <li class="animated bounceInUp">联系方式</li>
+        <li class="nav_box animated fadeInRight"></li>
+    </ul>
+    <div class="content" id="content">
+        <!--首页-->
+        <div class="home_page">
+            <div class="div11">
+                <img src="img/2017.png">
+            </div>
+            <input type="text" name="" id="text" placeholder="请输入要搜索的内容">
+            <ul id="ul1">
+
+            </ul>
+            <div class="div33 animated fadeIn">
+                <img src="img/yun.png">
+            </div>
+            <div class="div22 animated fadeInUpBig" >
+                <img src="img/1563.gif">
+            </div>
+        </div>
+        <!--css作品-->
+        <div class="css_worker">
+            <div class="ehb">
+                    <ul class="option" id="opation">
+                        <li><a href="javascript:;">列表展示</a> </li>
+                        <li><a href="javascript:;">分页展示</a> </li>
+                    </ul>
+                    <ul class="list">
+                        <li style="background: url('img2/shouhuan.png'); background-size: 100% 100%">
+                            <span>3d图片展示效果</span>
+                        </li>
+                        <li style="background: url('img2/baozha.png'); background-size: 100% 100%">
+                            <span>图片爆炸效果</span>
+                        </li>
+                        <li style="background: url('img2/logo.png'); background-size: 100% 100%">
+                            <span>灵魂回响静态页面</span>
+                        </li>
+                        <li style="background: url('img2/pubu.png'); background-size: 100% 100%">
+                            <span>js实现图片瀑布流展示效果</span>
+                        </li>
+                        <li style="background: url('img2/baidu.png'); background-size: 100% 100%">
+                            <span>利用jsonp请求百度搜索接口</span>
+                        </li>
+                        <li style="background: url('img2/apple.png'); background-size: 100% 100%">
+                            <span>苹果菜单展示效果</span>
+                        </li>
+                    </ul>
+                <div class="block">
+                    <div class="opa1"></div>
+                    <div class="opa2"></div>
+                    <ul class="list4">
+                        <li class="next" style="background: url('img2/shouhuan.png'); background-size: 100% 100%"></li>
+                        <li class="next2" style="background: url('img2/baozha.png'); background-size: 100% 100%"></li>
+                        <li style="background: url('img2/logo.png'); background-size: 100% 100%"></li>
+                        <li class="pre2" style="background: url('img2/pubu.png'); background-size: 100% 100%"></li>
+                        <li class="pre" style="background: url('img2/baidu.png'); background-size: 100% 100%"></li>
+                        <li class="now" style="background: url('img2/apple.png'); background-size: 100% 100%"></li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+        <!--小游戏-->
+        <div class="js_worker">
+            <div id="tagsList">
+                <a  style="background: url('img2/youxi1.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/捕鱼达人/捕鱼10.html" target="_blank" title="捕鱼达人">捕鱼达人</a>
+                <a style="background: url('img2/youxi1.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/奔向月空/index.html" target="_blank" title="奔向月空">奔向月空</a>
+                <a style="background: url('img2/xiangqi.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/中国象棋/index.html" target="_blank" title="中国象棋">中国象棋</a>
+                <a style="background: url('img2/feiji.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/打飞机/index.html" target="_blank" title="打飞机">打飞机</a>
+                <a style="background: url('img2/2048.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/2048/index.html" target="_blank" title="2048">2048</a>
+                <a style="background: url('img2/qieshuiguo.png'); background-size: 100% 100%"
+                   href="xiaoyouxi/切水果/index.html" target="_blank" title="切水果">切水果</a>
+            </div>
+        </div>
+        <!--HTML5、CSS3-->
+        <!--个人介绍-->
+        <div class="myself">
+              <div class="myself1" id="myself">
+                    <ul>
+                        <li>
+                                姓&nbsp;&nbsp;名：郭德生
+                        </li>
+                        <li>
+                                姓&nbsp;&nbsp;别：男
+                        </li>
+                        <li>
+                                出生日期：1993、06
+                        </li>
+                        <li>
+                                学&nbsp&nbsp;历：大专
+                        </li>
+                        <li>
+                                目前状态：离职
+                        </li>
+                        <li>
+                                专&nbsp&nbsp;业：计算机应用技术
+                        </li>
+                        <li>
+                                移动电话：186-1200-4106
+                        </li>
+                        <li>
+                                邮&nbsp;&nbsp;箱：gds_1994@163.com
+                        </li>
+                    </ul>
+                  <div> <img src="img2/1111.png"> </div>
+              </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
